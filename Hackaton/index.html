@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <title>Resume builder by Ayan</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1> Resume Builder by Ayaan</h1>
+        <form id="resume-form">
+            <fieldset>
+                <legend>
+                    <h3>Personal Information</h3>
+                </legend>
+                <label for="username">Resume URL</label>
+                <input type="text" id="username" name="username" required>
+
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter your name">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your e-mail">
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" placeholder="Enter your number">
+            </fieldset>
+            <hr>
+            <fieldset>
+                <legend>
+                    <h3>Education</h3>
+                </legend>
+                <label for="education">Degree and Institution:</label>
+                <textarea id="education" placeholder="Enter the Education" required></textarea>
+            </fieldset>
+            <hr>
+            <fieldset>
+                <legend>
+                    <h3>Work Experience</h3>
+                </legend>
+                <label for="experience">Experience :</label>
+                <textarea id="experience" placeholder="(e.g., Job title, company)" required></textarea>
+            </fieldset>
+            <hr>
+            <fieldset >
+                <legend>
+                    <h3>Skills</h3>
+                </legend>
+                <label for="skills">Skills (comma separated):</label>
+                <input type="text" id="skills" required>
+            </fieldset>
+            <button type="button" onclick="generateResume()">Generate Resume</button>
+
+        </form>
+
+        <div id="resume-output" class="resume"></div>
+    </div>
+
+   
+</body>
+
+</html>
